@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokémon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="scripts.js" defer></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center p-6">
+
+  <h1 class="text-4xl font-extrabold text-red-600 mb-6 text-center drop-shadow-lg">⚡ Pokédex Interativa</h1>
+
+  <div class="flex gap-4 mb-6">
+    <button id="prevBtn" class="bg-gray-400 text-white px-6 py-2 rounded-full hover:bg-gray-500 transition">Anterior</button>
+    <button id="loadBtn" class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-600 transition">Carregar Pokémon</button>
+    <button id="nextBtn" class="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition">Próxima</button>
+  </div>
+
+  <div id="pokemon-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-6xl">
+    <!-- Cards Pokémon aqui -->
+  </div>
+
+</body>
+</html>
